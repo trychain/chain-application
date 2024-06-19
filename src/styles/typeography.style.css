@@ -1,0 +1,63 @@
+p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Satoshi";
+}
+
+span {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Satoshi";
+}
+
+.btn {
+  font-family: "Satoshi";
+}
+
+a {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Satoshi";
+}
+
+label {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Satoshi";
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Satoshi";
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Satoshi";
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Satoshi";
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Satoshi";
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Satoshi";
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Satoshi";
+}
