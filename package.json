@@ -1,0 +1,73 @@
+{
+  "name": "chain-application",
+  "version": "0.0.1-prerelease",
+  "private": true,
+  "author": "Abdullah Aly",
+  "description": "Google Authenticator alternative",
+  "homepage": "./",
+  "main": "./index.js",
+  "dependencies": {
+    "build": "^0.1.4",
+    "dotenv": "^16.4.5",
+    "localforage": "^1.10.0",
+    "lodash": "^4.17.21",
+    "otpauth": "^9.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "scripts": {
+    "electron:start": "electron .",
+    "electron-builder:start": "electron-builder",
+    "react-scripts:start": "react-scripts start",
+    "react-scripts:build": "react-scripts build --em.main=build/electron.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.chain.app",
+    "productName": "Chain",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./src/assets/logo-background.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "./src/assets/logo-background.ico",
+      "uninstallerIcon": "./src/assets/logo-background.ico",
+      "installerSidebar": "./src/assets/sidebar.bmp",
+      "installerHeader": "./src/assets/header.bmp",
+      "uninstallDisplayName": "chain-uninstaller",
+      "license": "LICENSE.md",
+      "allowToChangeInstallationDirectory": false
+    }
+  }
+}
